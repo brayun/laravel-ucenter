@@ -1,0 +1,35 @@
+{
+    "name": "brayun/ucenter",
+    "description": "ucenter for laravel 5",
+    "type": "brayun-module",
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "5.5.*",
+        "laravel/passport": "^4.0",
+        "brayun/framework": "^1.0"
+    },
+    "homepage": "https://www.brayun.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ethan",
+            "email": "ethan@brayun.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Brayun\\Ucenter\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brayun\\Ucenter\\UcenterServiceProvider"
+            ]
+        }
+    }
+}
